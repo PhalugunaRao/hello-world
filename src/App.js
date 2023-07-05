@@ -5,16 +5,29 @@ import Welocme from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionCLick from './components/FunctionCLick';
+import ClassClick from './components/ClassClick';
 
 function App() {
   return (
     <div className="App">
+      <FunctionCLick>
 
-      <Counter></Counter>
+      </FunctionCLick>
+      <ClassClick>
+        
+      </ClassClick>
+
+      {/* <Counter></Counter> */}
 
       {/* <Message></Message> */}
 
+      {/* <Greet name="Geethika" heroName="Daughter">
+      </Greet> */}
 
+      {/* <Welocme name="Phalu" heroName="Father">
+        <p>This is children props</p>
+      </Welocme> */}
 
       {/* <Greet name="Phalu" heroName="Father">
         <p>This is children props</p>
