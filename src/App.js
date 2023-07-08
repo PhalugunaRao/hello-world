@@ -8,12 +8,15 @@ import Counter from './components/Counter';
 import FunctionCLick from './components/FunctionCLick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
 
-      <EventBind></EventBind>
+      <ParentComponent></ParentComponent>
+
+      {/* <EventBind></EventBind> */}
 
 
       {/* <FunctionCLick>
