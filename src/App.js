@@ -7,16 +7,21 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionCLick from './components/FunctionCLick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
-      <FunctionCLick>
+
+      <EventBind></EventBind>
+
+
+      {/* <FunctionCLick>
 
       </FunctionCLick>
       <ClassClick>
-        
-      </ClassClick>
+
+      </ClassClick> */}
 
       {/* <Counter></Counter> */}
 
