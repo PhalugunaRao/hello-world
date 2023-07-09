@@ -11,12 +11,20 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
 
 function App() {
   return (
     <div className="App">
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.sucess}>Sucess</h1>
+      <Stylesheet primary={true}/>
+      <Inline></Inline>
 
-      <NameList></NameList>
+      {/* <NameList></NameList> */}
       {/* <UserGreetings></UserGreetings> */}
 
       {/* <ParentComponent></ParentComponent> */}
