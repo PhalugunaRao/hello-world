@@ -8,7 +8,7 @@ import Person from './Person'
       id: 1,
       name: 'PHALU',
       age: 30,
-      skill: 'GEETHU'
+      skill: 'Geethika'
     },
     {
       id: 2,
@@ -23,8 +23,15 @@ import Person from './Person'
       skill: 'Vue'
     }
   ]
+  const personList = persons.map(person => <Person  key = {person.id} 
+    
+  person = {person}/>)
 
-  const personList = persons.map(person => <Person person = {person}/>)
+  const names = ['Phalu','Geethu','Anitha','Babu']
+  const nameList = names.map((name,index) => <h2> key={index} {name}  </h2>)
+
+    
+
 
   //Simple array with map 
   // const names = ['Geethi','ANith','Dad','bro']
@@ -32,7 +39,7 @@ import Person from './Person'
   return (
     <div>
      {
-      personList
+      nameList
      }
     </div>
   )
