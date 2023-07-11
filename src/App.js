@@ -15,14 +15,28 @@ import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import './appStyles.css';
 import styles from './appStyles.module.css';
+import Form from './components/Form';
+import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
+import HookCounterTwo from './components/HookCounterTwo';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
+
+      <HookCounterTwo/>
+      {/* <HookCounter></HookCounter> */}
+
+    {/* <ClassCounter></ClassCounter> */}
+
+
+
+      {/* <Form></Form> */}
+
+      {/* <h1 className='error'>Error</h1>
       <h1 className={styles.sucess}>Sucess</h1>
       <Stylesheet primary={true}/>
-      <Inline></Inline>
+      <Inline></Inline> */}
 
       {/* <NameList></NameList> */}
       {/* <UserGreetings></UserGreetings> */}
