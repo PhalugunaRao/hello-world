@@ -27,7 +27,7 @@ import DataFetching from './components/DataFetching';
 import ComponentC from './components/ComponentC';
 import React from 'react';
 import ReduceCounterOne from './reducedemo/ReduceCounterOne';
-import ReduceCounterTwo from './reducedemo/ReduceCounterTwo';
+import MultipleUseReducers from './reducedemo/MultipleUseReducers';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
 
-      <ReduceCounterTwo/>
+      <MultipleUseReducers/>
       {/* <UserContext.Provider value={'Geethu'}>
         <ChannelContext.Provider value={'LR KISHORE HIGH SCHOOL'}>
         <ComponentC/>
