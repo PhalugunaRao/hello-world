@@ -19,12 +19,19 @@ import Form from './components/Form';
 import ClassCounter from './components/ClassCounter';
 import HookCounter from './components/HookCounter';
 import HookCounterThree from './components/HookCounterThree';
+import HookCounterFour from './components/HookCounterFour';
+import HookCounterOne from './components/HookCounterOne';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
+      <HookMouse></HookMouse>
 
-      <HookCounterThree/>
+      {/* <HookCounterOne/> */}
+      {/* <HookCounterFour/> */}
+
+      {/* <HookCounterThree/> */}
       {/* <HookCounter></HookCounter> */}
 
     {/* <ClassCounter></ClassCounter> */}
