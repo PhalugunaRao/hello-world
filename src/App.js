@@ -26,6 +26,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import ComponentC from './components/ComponentC';
 import React from 'react';
+import ReduceCounterOne from './reducedemo/ReduceCounterOne';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
@@ -33,11 +34,13 @@ export const ChannelContext =React.createContext()
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'Geethu'}>
+
+      <ReduceCounterOne/>
+      {/* <UserContext.Provider value={'Geethu'}>
         <ChannelContext.Provider value={'LR KISHORE HIGH SCHOOL'}>
         <ComponentC/>
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
      
       {/* <DataFetching/> */}
