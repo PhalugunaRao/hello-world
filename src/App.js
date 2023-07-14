@@ -24,11 +24,20 @@ import HookCounterOne from './components/HookCounterOne';
 import HookMouse from './components/HookMouse';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC';
+import React from 'react';
+
+export const UserContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <DataFetching/>
+      <UserContext.Provider value={'Geethu'}>
+      <ComponentC/>
+      </UserContext.Provider>
+
+     
+      {/* <DataFetching/> */}
       {/* <IntervalHookCounter/> */}
       {/* <HookMouse></HookMouse> */}
 
