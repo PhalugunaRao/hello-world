@@ -25,18 +25,46 @@ import HookMouse from './components/HookMouse';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import ComponentC from './components/ComponentC';
-import React from 'react';
+import React,{useReducer} from 'react';
 import ReduceCounterOne from './reducedemo/ReduceCounterOne';
 import MultipleUseReducers from './reducedemo/MultipleUseReducers';
+import ReduceA from './reducedemo/ReduceA';
+import ReduceB from './reducedemo/ReduceB';
+import ReduceC from './reducedemo/ReduceC';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
 
-function App() {
-  return (
-    <div className="App">
+export const CountContext = React.createContext()
 
-      <MultipleUseReducers/>
+const initialState = 0
+const reducer = (state,action) =>{
+  switch(action){
+    case 'increment':
+    return state + 1
+    case 'decrement':
+      return state -1
+      case 'reset':
+        return initialState
+        default:
+          return state
+  }
+}
+
+function App() {
+  const [count,dispatch] = useReducer(reducer,initialState)
+  return (
+    <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
+
+   
+    <div className="App">
+      Count - {count} 
+
+      <ReduceA/>
+      <ReduceB/>
+      <ReduceC/>
+
+      {/* <MultipleUseReducers/> */}
       {/* <UserContext.Provider value={'Geethu'}>
         <ChannelContext.Provider value={'LR KISHORE HIGH SCHOOL'}>
         <ComponentC/>
@@ -108,6 +136,7 @@ function App() {
       <Hello/> */}
 
     </div>
+    </CountContext.Provider>
   );
 }
 
