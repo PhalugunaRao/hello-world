@@ -31,6 +31,7 @@ import MultipleUseReducers from './reducedemo/MultipleUseReducers';
 import ReduceA from './reducedemo/ReduceA';
 import ReduceB from './reducedemo/ReduceB';
 import ReduceC from './reducedemo/ReduceC';
+import DataFetchingOne from './datafetch/DataFetchingOne';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
@@ -54,89 +55,93 @@ const reducer = (state,action) =>{
 function App() {
   const [count,dispatch] = useReducer(reducer,initialState)
   return (
-    <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
-
-   
     <div className="App">
-      Count - {count} 
-
-      <ReduceA/>
-      <ReduceB/>
-      <ReduceC/>
-
-      {/* <MultipleUseReducers/> */}
-      {/* <UserContext.Provider value={'Geethu'}>
-        <ChannelContext.Provider value={'LR KISHORE HIGH SCHOOL'}>
-        <ComponentC/>
-        </ChannelContext.Provider>
-      </UserContext.Provider> */}
-
-     
-      {/* <DataFetching/> */}
-      {/* <IntervalHookCounter/> */}
-      {/* <HookMouse></HookMouse> */}
-
-      {/* <HookCounterOne/> */}
-      {/* <HookCounterFour/> */}
-
-      {/* <HookCounterThree/> */}
-      {/* <HookCounter></HookCounter> */}
-
-    {/* <ClassCounter></ClassCounter> */}
-
-
-
-      {/* <Form></Form> */}
-
-      {/* <h1 className='error'>Error</h1>
-      <h1 className={styles.sucess}>Sucess</h1>
-      <Stylesheet primary={true}/>
-      <Inline></Inline> */}
-
-      {/* <NameList></NameList> */}
-      {/* <UserGreetings></UserGreetings> */}
-
-      {/* <ParentComponent></ParentComponent> */}
-
-      {/* <EventBind></EventBind> */}
-
-
-      {/* <FunctionCLick>
-
-      </FunctionCLick>
-      <ClassClick>
-
-      </ClassClick> */}
-
-      {/* <Counter></Counter> */}
-
-      {/* <Message></Message> */}
-
-      {/* <Greet name="Geethika" heroName="Daughter">
-      </Greet> */}
-
-      {/* <Welocme name="Phalu" heroName="Father">
-        <p>This is children props</p>
-      </Welocme> */}
-
-      {/* <Greet name="Phalu" heroName="Father">
-        <p>This is children props</p>
-      </Greet>
-      <Greet name="Geethika" heroName="Daughter">
-        <button>Action</button>
-      </Greet>
-      <Welocme name="Phalu" heroName="Father">
-        <p>This is children props</p>
-      </Welocme>
-      <Welocme name="Geethika" heroName="Daughter">
-        <button>Action</button>
-      </Welocme>
-      <Greet/>
-      <Welocme/>
-      <Hello/> */}
+      <DataFetchingOne/>
 
     </div>
-    </CountContext.Provider>
+    // <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
+
+   
+    // <div className="App">
+    //   Count - {count} 
+
+    //   <ReduceA/>
+    //   <ReduceB/>
+    //   <ReduceC/>
+
+    //   {/* <MultipleUseReducers/> */}
+    //   {/* <UserContext.Provider value={'Geethu'}>
+    //     <ChannelContext.Provider value={'LR KISHORE HIGH SCHOOL'}>
+    //     <ComponentC/>
+    //     </ChannelContext.Provider>
+    //   </UserContext.Provider> */}
+
+     
+    //   {/* <DataFetching/> */}
+    //   {/* <IntervalHookCounter/> */}
+    //   {/* <HookMouse></HookMouse> */}
+
+    //   {/* <HookCounterOne/> */}
+    //   {/* <HookCounterFour/> */}
+
+    //   {/* <HookCounterThree/> */}
+    //   {/* <HookCounter></HookCounter> */}
+
+    // {/* <ClassCounter></ClassCounter> */}
+
+
+
+    //   {/* <Form></Form> */}
+
+    //   {/* <h1 className='error'>Error</h1>
+    //   <h1 className={styles.sucess}>Sucess</h1>
+    //   <Stylesheet primary={true}/>
+    //   <Inline></Inline> */}
+
+    //   {/* <NameList></NameList> */}
+    //   {/* <UserGreetings></UserGreetings> */}
+
+    //   {/* <ParentComponent></ParentComponent> */}
+
+    //   {/* <EventBind></EventBind> */}
+
+
+    //   {/* <FunctionCLick>
+
+    //   </FunctionCLick>
+    //   <ClassClick>
+
+    //   </ClassClick> */}
+
+    //   {/* <Counter></Counter> */}
+
+    //   {/* <Message></Message> */}
+
+    //   {/* <Greet name="Geethika" heroName="Daughter">
+    //   </Greet> */}
+
+    //   {/* <Welocme name="Phalu" heroName="Father">
+    //     <p>This is children props</p>
+    //   </Welocme> */}
+
+    //   {/* <Greet name="Phalu" heroName="Father">
+    //     <p>This is children props</p>
+    //   </Greet>
+    //   <Greet name="Geethika" heroName="Daughter">
+    //     <button>Action</button>
+    //   </Greet>
+    //   <Welocme name="Phalu" heroName="Father">
+    //     <p>This is children props</p>
+    //   </Welocme>
+    //   <Welocme name="Geethika" heroName="Daughter">
+    //     <button>Action</button>
+    //   </Welocme>
+    //   <Greet/>
+    //   <Welocme/>
+    //   <Hello/> */}
+
+    // </div>
+    // </CountContext.Provider>
   );
 }
 
