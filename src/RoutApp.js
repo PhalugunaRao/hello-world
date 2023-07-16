@@ -8,6 +8,9 @@ import { NoMatch } from './routcomponent/NoMatch'
 import { Products } from './routcomponent/Products'
 import { FeatureProduct } from './routcomponent/FeatureProduct'
 import { NewProduct } from './routcomponent/NewProduct'
+import { Users } from './routcomponent/Users'
+import { UserDetails } from './routcomponent/UserDetails'
+import { Admin } from './routcomponent/Admin'
 
 function RoutApp() {
   return (
@@ -21,6 +24,10 @@ function RoutApp() {
         <Route index element={<FeatureProduct/>}></Route>
         <Route path='featured' element={<FeatureProduct/>}></Route>
         <Route path='new' element={<NewProduct/>}></Route>
+      </Route>
+      <Route path='users' element={<Users/>}>
+      <Route path=':userId' element={<UserDetails/>}/>
+      <Route path='admin' element={<Admin/>}/>
       </Route>
       <Route path='*' element={<NoMatch/>}/>
     </Routes>
