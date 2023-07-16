@@ -4,6 +4,7 @@ import Home from './routcomponent/Home'
 import About from './routcomponent/About'
 import { Navbar } from './routcomponent/Navbar'
 import { OrderSummery } from './routcomponent/OrderSummery'
+import { NoMatch } from './routcomponent/NoMatch'
 
 function RoutApp() {
   return (
@@ -13,6 +14,7 @@ function RoutApp() {
       <Route path='/' element={<Home/>}></Route>
       <Route path='about' element={<About/>}></Route>
       <Route path='order-summary' element={<OrderSummery/>}/>
+      <Route path='*' element={<NoMatch/>}/>
     </Routes>
     </>
   )
