@@ -34,6 +34,7 @@ import ReduceC from './reducedemo/ReduceC';
 import DataFetchingOne from './datafetch/DataFetchingOne';
 import DataFetchingTwo from './datafetch/DataFetchingTwo';
 import FetchData from './datafetch/FetchData';
+import UseMemoCounter from './ReactHooks /UseMemoCounter';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
@@ -59,7 +60,7 @@ function App() {
   return (
     <div className="App">
       {/* <DataFetchingTwo/> */}
-      <FetchData/>
+      <UseMemoCounter/>
 
     </div>
     // <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
