@@ -12,6 +12,7 @@ import { NewProduct } from './routcomponent/NewProduct'
 import { Users } from './routcomponent/Users'
 import { UserDetails } from './routcomponent/UserDetails'
 import { Admin } from './routcomponent/Admin'
+import { Profile } from './routcomponent/Profile'
 
 const LazyAbout = React.lazy(()=>import('./routcomponent/About'))
 
@@ -37,6 +38,7 @@ function RoutApp() {
       <Route path=':userId' element={<UserDetails/>}/>
       <Route path='admin' element={<Admin/>}/>
       </Route>
+      <Route path='profile' element={<Profile/>}></Route>
       <Route path='*' element={<NoMatch/>}/>
     </Routes>
     </>

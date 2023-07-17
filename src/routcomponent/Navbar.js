@@ -25,6 +25,9 @@ export const Navbar = () => {
       <NavLink style={navLinkStyle} to='/products'>
         Products
       </NavLink>
+      <NavLink style={navLinkStyle} to='/profile'>
+        Profile
+      </NavLink>
     </nav>
   )
 }
