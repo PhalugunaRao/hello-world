@@ -11,5 +11,10 @@ display: inline-block;
 font-size: 16px;
 cursor: pointer;
 transition:0.5s all ease-out;
+`
+
+export const FancyButton = styled(StyledButton)`
+background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+border: none;
 
 `
