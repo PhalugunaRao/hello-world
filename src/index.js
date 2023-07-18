@@ -4,12 +4,13 @@ import {BrowserRouter} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import RouteApp from './RoutApp'
+import StyleApp from './StyleApp'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App></App>
+    <StyleApp></StyleApp>
     {/* <BrowserRouter>
      <RouteApp />
     </BrowserRouter> */}
