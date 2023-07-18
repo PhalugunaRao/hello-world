@@ -9,6 +9,10 @@ function StyleApp() {
   return (
     <div className='App'>
       <StyledButton> Click me</StyledButton>
+      <div>
+        <br></br>
+      </div>
+      <StyledButton variant='outline'> Click me Two</StyledButton>
       
     </div>
   )
