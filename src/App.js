@@ -35,6 +35,8 @@ import DataFetchingOne from './datafetch/DataFetchingOne';
 import DataFetchingTwo from './datafetch/DataFetchingTwo';
 import FetchData from './datafetch/FetchData';
 import UseMemoCounter from './ReactHooks /UseMemoCounter';
+import FocusInput from './ReactHooks /FocusInput';
+import HookTimer from './ReactHooks /HookTimer';
 
 export const UserContext = React.createContext()
 export const ChannelContext =React.createContext()
@@ -60,7 +62,7 @@ function App() {
   return (
     <div className="App">
       {/* <DataFetchingTwo/> */}
-      <UseMemoCounter/>
+      <HookTimer/>
 
     </div>
     // <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
