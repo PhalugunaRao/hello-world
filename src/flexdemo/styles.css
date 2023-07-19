@@ -4,10 +4,6 @@ body{
 .container{
   border: 6px solid black;
   display: flex;
-  height: 800px;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  
 
   
 
@@ -19,6 +15,12 @@ body{
 
 
   /*
+
+    height: 800px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+
+
   justify-content: space-evenly;
   
 
@@ -57,6 +59,7 @@ body{
 }
 .item-3{
   background-color: blueviolet;
+  order: 1;
 }
 .item-4{
   background-color: brown;
@@ -69,10 +72,12 @@ body{
 }
 .item-7{
   background-color: royalblue;
+  order: 2;
 }
 .item-8{
   background-color: pink;
 }
 .item-9{
   background-color: maroon;
+  order: 1;
 }
