@@ -2,10 +2,9 @@ body{
   margin: 0;
 }
 .container{
-  border: 6px solid black;
-  display: flex;
-  height: 400px;
-  align-items: flex-end;
+ font-size: 1.5rem;
+ display: flex;
+}
 
   
 
@@ -46,22 +45,24 @@ body{
   flex-direction: row-reverse;
   flex-direction: column;
   flex-direction: column-reverse; */
-}
-.flex-item{
+
+/* .flex-item{
   color: white;
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
  
-}
-.item-1{
+} */
+.item1 {
   background-color: skyblue;
-  align-self: flex-start;
+ 
+ 
 }
-.item-2{
+.item2{
   background-color: aqua;
-  align-self: flex-end;
+ 
 }
+ 
 .item-3{
   background-color: blueviolet;
   align-self: center;
