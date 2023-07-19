@@ -5,8 +5,8 @@ body{
   border: 6px solid black;
   display: flex;
   height: 800px;
-  align-items: baseline;
-  
+  flex-wrap: wrap;
+  align-content: space-evenly;
   
 
   
@@ -51,15 +51,12 @@ body{
 }
 .item-1{
   background-color: antiquewhite;
-  padding-bottom: 3rem;
 }
 .item-2{
   background-color: aqua;
-  padding-bottom: 5rem;
 }
 .item-3{
   background-color: blueviolet;
-  font-size: 3rem;
 }
 .item-4{
   background-color: brown;
