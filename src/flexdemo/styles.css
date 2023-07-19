@@ -4,8 +4,30 @@ body{
 .container{
   border: 6px solid black;
   display: flex;
-  flex-direction: row;
-  /*flex-direction: row-reverse;
+  flex-direction: column;
+  height: 400px;
+  flex-wrap: wrap-reverse;
+
+  
+
+  
+
+
+
+
+
+
+  /*
+  flex-wrap
+
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+
+  
+  flex-directions
+  
+  flex-direction: row; 
+  flex-direction: row-reverse;
   flex-direction: column;
   flex-direction: column-reverse; */
 }
