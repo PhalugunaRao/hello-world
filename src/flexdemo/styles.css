@@ -4,9 +4,8 @@ body{
 .container{
   border: 6px solid black;
   display: flex;
-  flex-direction: column;
-  height: 400px;
-  flex-wrap: wrap-reverse;
+  
+  
 
   
 
@@ -18,6 +17,15 @@ body{
 
 
   /*
+
+  //flex-flow: <flex-direction> <flex-wrap>
+
+ flex-flow: row-reverse wrap;
+  
+  flex-direction: column;
+  height: 400px;
+  flex-wrap: wrap-reverse;
+
   flex-wrap
 
   flex-wrap: wrap;
