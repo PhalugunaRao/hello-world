@@ -4,6 +4,8 @@ body{
 .container{
   border: 6px solid black;
   display: flex;
+  height: 400px;
+  align-items: flex-end;
 
   
 
@@ -54,16 +56,19 @@ body{
 }
 .item-1{
   background-color: skyblue;
-  flex-basis: 400px;
+  align-self: flex-start;
 }
 .item-2{
   background-color: aqua;
+  align-self: flex-end;
 }
 .item-3{
   background-color: blueviolet;
+  align-self: center;
 }
 .item-4{
   background-color: brown;
+  align-self: stretch;
 }
 .item-5{
   background-color: yellowgreen;
