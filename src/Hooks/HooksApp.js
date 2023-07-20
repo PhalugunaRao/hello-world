@@ -1,6 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { json } from 'react-router-dom'
 
 function HooksApp() {
+  const [resourceType,setResourceType] = useState('posts')
+  const [items,setItems] = useState([])
+  useEffect(() =>{
+    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+    .then(response => response.json())
+    .then(json => setItems(json))
+  },[resourceType])
+  
   const [count,setCount] = useState(() =>{
     console.log('run function')
     return 4
@@ -16,10 +25,21 @@ function HooksApp() {
   }
   return (
     <>
-    <button onClick={decrementCount}>-</button>
+    <div>
+      <button onClick={()=>setResourceType('posts')}>Posts</button>
+      <button onClick={() => setResourceType('users')}>Users</button>
+      <button onClick={()=>setResourceType('comments')}>Comments</button>
+    </div>
+    <h1>{resourceType}</h1>
+    {
+      items.map(items =>{
+        return <pre>{JSON.stringify(items)}</pre>
+      })
+    }
+    {/* <button onClick={decrementCount}>-</button>
     <span>{count}</span>
     <span>{theme}</span>
-    <button onClick={incrementCount}>+</button>
+    <button onClick={incrementCount}>+</button> */}
     </>
     
   )
