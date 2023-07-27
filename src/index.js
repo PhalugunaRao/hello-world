@@ -7,11 +7,12 @@ import RouteApp from './RoutApp'
 import StyleApp from './StyleApp'
 import reportWebVitals from './reportWebVitals';
 import HooksApp from './Hooks/HooksApp';
+import UseMemoApp from './Hooks/UseMemoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HooksApp/>
+    <UseMemoApp/>
     {/* <StyleApp></StyleApp> */}
     {/* <BrowserRouter>
      <RouteApp />
