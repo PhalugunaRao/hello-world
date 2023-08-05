@@ -11,6 +11,7 @@ import UseMemoApp from './Hooks/UseMemoApp';
 import AppStyled from './styledcomponen/AppStyled';
 import ProfileUser from './online/ProfileUser';
 import TickTokApp from './ticktok/TickTokApp';
+import ThapaApp from './thapa/ThapaApp';
 
 
 
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <ProfileUser/> */}
-    <TickTokApp/>
+    <ThapaApp/>
     
     {/* <AppStyled/> */}
     {/* <UseMemoApp/> */}
