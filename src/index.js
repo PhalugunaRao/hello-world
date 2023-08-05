@@ -9,11 +9,18 @@ import reportWebVitals from './reportWebVitals';
 import HooksApp from './Hooks/HooksApp';
 import UseMemoApp from './Hooks/UseMemoApp';
 import AppStyled from './styledcomponen/AppStyled';
+import ProfileUser from './online/ProfileUser';
+import TickTokApp from './ticktok/TickTokApp';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppStyled/>
+    {/* <ProfileUser/> */}
+    <TickTokApp/>
+    
+    {/* <AppStyled/> */}
     {/* <UseMemoApp/> */}
     {/* <StyleApp></StyleApp> */}
     {/* <BrowserRouter>
