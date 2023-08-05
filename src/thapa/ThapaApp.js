@@ -6,7 +6,16 @@ function ThapaApp() {
   const [myname,setMyName]=  useState('Thapa Techincal');
 
   const changeName = () =>{
-setMyName('Hi Geethika');
+    // let val = myname;
+    // if (val==='Thapa Techincal'){
+    //   setMyName('Hi Geethika');
+    // }else{
+    //   setMyName('Thapa Techincal');
+    // }
+    let val = myname;
+      val==='Thapa Techincal'?
+       setMyName('Hi Geethika'): setMyName('Thapa Techincal');
+
   }
   return (
     <div>
