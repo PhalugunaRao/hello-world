@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import '../App.css'
+import RulesHooks from './RulesHooks';
+import UseStateArray from './UseStateArray';
 
 function ThapaApp() {
 
@@ -19,8 +21,10 @@ function ThapaApp() {
   }
   return (
     <div>
-      <h1>{myname}</h1>
+      {/* <h1>{myname}</h1>
       <button className="btn" onClick={changeName}>Click me Please</button>
+      <RulesHooks/> */}
+      <UseStateArray/>
     </div>
   )
 }

@@ -12,14 +12,20 @@ import AppStyled from './styledcomponen/AppStyled';
 import ProfileUser from './online/ProfileUser';
 import TickTokApp from './ticktok/TickTokApp';
 import ThapaApp from './thapa/ThapaApp';
+import MultipleStatesApp from './thapa/MultipleStatesApp';
+import RulesHooks from './thapa/RulesHooks';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+ 
     {/* <ProfileUser/> */}
-    <ThapaApp/>
+     <ThapaApp/> 
+    {/* <MultipleStatesApp/> */}
+   
     
     {/* <AppStyled/> */}
     {/* <UseMemoApp/> */}
