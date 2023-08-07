@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import '../App.css'
 import RulesHooks from './RulesHooks';
 import UseStateArray from './UseStateArray';
+import UseStateObject from './UseStateObject';
+import BasicTodoList from './BasicTodoList';
 
 function ThapaApp() {
 
@@ -24,7 +26,9 @@ function ThapaApp() {
       {/* <h1>{myname}</h1>
       <button className="btn" onClick={changeName}>Click me Please</button>
       <RulesHooks/> */}
-      <UseStateArray/>
+      {/* <UseStateArray/> */}
+      {/* <UseStateObject/> */}
+      <BasicTodoList/>
     </div>
   )
 }
