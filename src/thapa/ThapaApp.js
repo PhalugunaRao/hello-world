@@ -4,6 +4,7 @@ import RulesHooks from './RulesHooks';
 import UseStateArray from './UseStateArray';
 import UseStateObject from './UseStateObject';
 import BasicTodoList from './BasicTodoList';
+import UseEffects1 from './useEffect/UseEffects1';
 
 function ThapaApp() {
 
@@ -28,7 +29,8 @@ function ThapaApp() {
       <RulesHooks/> */}
       {/* <UseStateArray/> */}
       {/* <UseStateObject/> */}
-      <BasicTodoList/>
+      {/* <BasicTodoList/> */}
+      <UseEffects1/>
     </div>
   )
 }
