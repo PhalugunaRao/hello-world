@@ -6,6 +6,7 @@ import UseStateObject from './UseStateObject';
 import BasicTodoList from './BasicTodoList';
 import UseEffects1 from './useEffect/UseEffects1';
 import UseEffect2 from './useEffect/UseEffect2';
+import ShortCircuitEvu from './ShortCircuitEvu';
 
 function ThapaApp() {
 
@@ -32,7 +33,8 @@ function ThapaApp() {
       {/* <UseStateObject/> */}
       {/* <BasicTodoList/> */}
       {/* <UseEffects1/> */}
-      <UseEffect2/>
+      {/* <UseEffect2/> */}
+      <ShortCircuitEvu/>
     </div>
   )
 }
