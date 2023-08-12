@@ -5,6 +5,7 @@ import UseStateArray from './UseStateArray';
 import UseStateObject from './UseStateObject';
 import BasicTodoList from './BasicTodoList';
 import UseEffects1 from './useEffect/UseEffects1';
+import UseEffect2 from './useEffect/UseEffect2';
 
 function ThapaApp() {
 
@@ -30,7 +31,8 @@ function ThapaApp() {
       {/* <UseStateArray/> */}
       {/* <UseStateObject/> */}
       {/* <BasicTodoList/> */}
-      <UseEffects1/>
+      {/* <UseEffects1/> */}
+      <UseEffect2/>
     </div>
   )
 }
