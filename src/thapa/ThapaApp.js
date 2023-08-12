@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import '../App.css'
+import '../Thapa.css'
 import RulesHooks from './RulesHooks';
 import UseStateArray from './UseStateArray';
 import UseStateObject from './UseStateObject';
@@ -7,6 +7,7 @@ import BasicTodoList from './BasicTodoList';
 import UseEffects1 from './useEffect/UseEffects1';
 import UseEffect2 from './useEffect/UseEffect2';
 import ShortCircuitEvu from './ShortCircuitEvu';
+import BasciForm from './forms/BasciForm';
 
 function ThapaApp() {
 
@@ -34,7 +35,8 @@ function ThapaApp() {
       {/* <BasicTodoList/> */}
       {/* <UseEffects1/> */}
       {/* <UseEffect2/> */}
-      <ShortCircuitEvu/>
+      {/* <ShortCircuitEvu/> */}
+      <BasciForm/>
     </div>
   )
 }
