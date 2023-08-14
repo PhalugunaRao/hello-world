@@ -3,15 +3,28 @@ import React, { useEffect, useState } from 'react'
 const UseEffectApi = () => {
 
   const [users,setUsers] = useState([]);
+  const [loading,setLoading] = useState(true);
 
   const getUsers =async() =>{
-    const response = await fetch('https://jsonplaceholder.typicode.com/photos');
-    setUsers(await response.json());
+    try{
+        setLoading(false)
+      const response = await fetch('https://jsonplaceholder.typicode.com/photos');
+      setUsers(await response.json());
+    }catch(error){
+      console.log("my error is"+error);
+    }
+   
   }
 
   useEffect(()=>{
     getUsers()
   },[]);
+
+  if(loading){
+    return(
+      <h1>Loading...</h1>
+    )
+  }
   return (
     <>
     <h2>List of GitHub Users</h2>
