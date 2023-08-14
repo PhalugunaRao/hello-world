@@ -8,8 +8,16 @@ const BasciForm = () => {
   const submitForm = (e) =>{
     e.preventDefault();
 
-    const newEntry = {email:email,password:password}
-    setAllEntry([...allEntry , newEntry]);
+      if(email && password){
+        const newEntry = {id: new Date().getTime().toString ,email,password}
+        setAllEntry([...allEntry , newEntry]);
+    
+        setEmail("")
+        setPassword("")
+      }else{
+        alert("plz fill the data");
+      }
+    
 
   }
   return (
@@ -35,9 +43,10 @@ const BasciForm = () => {
     <div>
       {
         allEntry.map((curElem)=>{
+          const {id,email,password} = curElem 
           return(
-            <div className="showDataStyle">
-              <p>`${curElem.email}==={curElem.password}`</p>
+            <div className="showDataStyle" key={curElem.id}>
+              <p>{curElem.email}==={curElem.password}</p>
 
             </div>
           )

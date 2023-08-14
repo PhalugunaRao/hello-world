@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import '../Thapa.css'
+//import '../Thapa.css'
 import RulesHooks from './RulesHooks';
 import UseStateArray from './UseStateArray';
 import UseStateObject from './UseStateObject';

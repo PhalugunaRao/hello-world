@@ -14,6 +14,8 @@ import TickTokApp from './ticktok/TickTokApp';
 import ThapaApp from './thapa/ThapaApp';
 import MultipleStatesApp from './thapa/MultipleStatesApp';
 import RulesHooks from './thapa/RulesHooks';
+import StyledApp from './thapa/styledcss/StyledApp';
+import UseEffectApi from './thapa/useEffect/UseEffectApi';
 
 
 
@@ -21,9 +23,11 @@ import RulesHooks from './thapa/RulesHooks';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <UseEffectApi/>
+    {/* <StyledApp/> */}
  
     {/* <ProfileUser/> */}
-     <ThapaApp/> 
+     {/* <ThapaApp/>  */}
     {/* <MultipleStatesApp/> */}
    
     
